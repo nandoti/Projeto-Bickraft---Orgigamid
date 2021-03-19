@@ -57,6 +57,24 @@ img {
   margin: 8px auto;
 }
 
+.caption-internal {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.caption-internal:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px 0;
+}
 /*HEADER*/
 
 .header {
@@ -89,6 +107,11 @@ img {
 .header-menu ul li a:hover {
   color: #fff;
 }
+
+.header-menu ul li a.menu-active {
+  color: #fff;
+}
+
 /*Introdução*/
 
 .introduction {
@@ -119,6 +142,7 @@ img {
 }
 
 /*pseudo classe - Before ou after add linhas no html*/
+
 .quote-ex p:before,
 .quote-ex p:after {
   content: "";
@@ -134,6 +158,32 @@ img {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.1rem;
+}
+
+/*Indrodução Interna*/
+
+.introduction-internal {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.introduction-internal h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introduction-internal h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
 }
 
 /*Produtos*/
@@ -219,7 +269,7 @@ img {
   width: 634px;
   height: 83px;
   display: block;
-  background: url(../img/linhas.svg) no-repeat center;
+  background: url("../img/linhas.svg") no-repeat center;
   position: absolute;
   top: 209px;
   right: 162px;
@@ -231,7 +281,8 @@ img {
 }
 
 .quality-list {
-  padding-top: 0 40px;
+  padding-top: 20px;
+  overflow: auto; /* Clear-fix */
 }
 
 .quality-list li {
@@ -325,5 +376,5 @@ img {
 .copy {
   width: 100%;
   background: #fec63e;
-  padding: 20px 0;
+  padding: 20px;
 }
