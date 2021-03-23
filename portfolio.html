@@ -2,17 +2,16 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Bikcraft - Portfólio</title>
-
-    <!--CSS-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header class="header">
@@ -38,7 +37,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-slide="quote">
       <blockquote class="quote_clientes">
         <p>
           “No mundo atual, a contínua expansão de nossa atividade cumpre um
@@ -47,16 +46,44 @@
         </p>
         <cite>Barbara Moss</cite>
       </blockquote>
+      <blockquote class="quote_clientes">
+        <p>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          debitis nemo iusto rem magni adipisci, minima error unde dolorum
+          necessitatibus. Vero aliquid laborum delectus nam, magni magnam
+          molestias error quidem?”
+        </p>
+        <cite>Barbara Moss</cite>
+      </blockquote>
+      <blockquote class="quote_clientes">
+        <p>
+          “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ab
+          nostrum fuga quas harum atque distinctio, modi, tenetur hic eius enim
+          nam a aliquid rem libero! Quasi harum itaque recusandae!”
+        </p>
+        <cite>Barbara Moss</cite>
+      </blockquote>
     </section>
 
     <section class="portfolio">
-      <div class="container">
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio_lista">
           <li class="grid-8">
             <img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô" />
           </li>
           <li class="grid-8">
             <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" />
+          </li>
+          <li class="grid-16">
+            <img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" />
+          </li>
+        </ul>
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô" />
           </li>
           <li class="grid-16">
             <img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" />
@@ -121,9 +148,11 @@
 
       <div class="copy">
         <div class="container">
-          <p class="grid-16">Bikcraft 2020 - Fernando Tavares.</p>
+          <p class="grid-16">Bikcraft 2020</p>
         </div>
       </div>
     </footer>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
