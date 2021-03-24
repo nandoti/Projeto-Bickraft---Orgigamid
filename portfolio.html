@@ -2,13 +2,32 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>Bikcraft - Portfólio</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
+    <title>Bikcraft - Conheça o portfólio de clientes</title>
+    <meta
+      name="description"
+      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Bikcraft - Conheça o portfólio de clientes"
+    />
+    <meta
+      property="og:description"
+      content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+    <meta property="og:url" content="http://bikcraft.com/portfolio.html" />
+    <meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <link rel="stylesheet" href="css/responsivo.css" />
+
+	<!--JS-->
+	
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -32,36 +51,37 @@
 
     <section class="introducao-interna interna_portfolio">
       <div class="container">
-        <h1>Portfólio</h1>
-        <p>conheça os projetos que amamos mostrar</p>
+        <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown">
+          conheça os projetos que amamos mostrar
+        </p>
       </div>
     </section>
 
-    <section class="container" data-slide="quote">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
       <blockquote class="quote_clientes">
         <p>
-          “No mundo atual, a contínua expansão de nossa atividade cumpre um
-          papel essencial na formulação da gestão inovadora da qual fazemos
-          parte.”
+          “Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez
+          foi intensificar o meu amor por esta atividade. Recomendo à todos que
+          amo.”
         </p>
         <cite>Barbara Moss</cite>
       </blockquote>
       <blockquote class="quote_clientes">
         <p>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-          debitis nemo iusto rem magni adipisci, minima error unde dolorum
-          necessitatibus. Vero aliquid laborum delectus nam, magni magnam
-          molestias error quidem?”
+          “Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a
+          minha companheira mais fiel, nunca me traiu e está sempre a minha
+          disposição.”
         </p>
-        <cite>Barbara Moss</cite>
+        <cite>Jhony Rato</cite>
       </blockquote>
       <blockquote class="quote_clientes">
         <p>
-          “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ab
-          nostrum fuga quas harum atque distinctio, modi, tenetur hic eius enim
-          nam a aliquid rem libero! Quasi harum itaque recusandae!”
+          “Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão
+          perdendo. A precisão é absurda e a velocidade transcendental. Nunca
+          vida nada igual.”
         </p>
-        <cite>Barbara Moss</cite>
+        <cite>Bernardo</cite>
       </blockquote>
     </section>
 
@@ -69,7 +89,7 @@
       <div class="container" data-slide="portfolio">
         <ul class="portfolio_lista">
           <li class="grid-8">
-            <img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô" />
+            <img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" />
           </li>
           <li class="grid-8">
             <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" />
@@ -83,7 +103,7 @@
             <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" />
           </li>
           <li class="grid-8">
-            <img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô" />
+            <img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" />
           </li>
           <li class="grid-16">
             <img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" />
@@ -128,17 +148,23 @@
             <ul>
               <li>
                 <a href="http://facebook.com" target="_blank"
-                  ><img src="img/redes-sociais/facebook.svg"
+                  ><img
+                    src="img/redes-sociais/facebook.svg"
+                    alt="Facebook Bikcraft"
                 /></a>
               </li>
               <li>
                 <a href="http://instagram.com" target="_blank"
-                  ><img src="img/redes-sociais/instagram.svg"
+                  ><img
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Instagram Bikcraft"
                 /></a>
               </li>
               <li>
                 <a href="http://twitter.com" target="_blank"
-                  ><img src="img/redes-sociais/twitter.svg"
+                  ><img
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Twitter Bikcraft"
                 /></a>
               </li>
             </ul>
@@ -152,7 +178,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/simple-anime.js"></script>
     <script src="./js/simple-slide.js"></script>
     <script src="./js/script.js"></script>
+    <!-- JavaScript -->
   </body>
 </html>
